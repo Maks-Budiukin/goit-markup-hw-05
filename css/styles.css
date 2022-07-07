@@ -1,3 +1,13 @@
+@keyframes currentUnderline {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 :root {
     --accent-color: #2196F3;
     --main-text-color: #212121;
@@ -114,6 +124,9 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     
         background-color: var(--accent-color);
         border-radius: 2px;
+
+        animation-name: currentUnderline;
+        animation-duration: 250ms;
 
 }
 
@@ -463,6 +476,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 }
 
 .backdrop.is-hidden {
+    visibility: none;
     opacity: 0;
     pointer-events: none;
 }
