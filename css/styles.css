@@ -565,7 +565,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 
 
 .location .location-list-item + .location-list-item {
-    margin-top: 9px;
+    margin-top: 5px;
 }
 
 .location-link {
@@ -573,6 +573,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
+    
     color: var(--main-bg-color);
 
     transition-property: color;
