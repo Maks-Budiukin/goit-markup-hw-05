@@ -481,29 +481,35 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.1);
-}
+
 
 .modal {
     position: absolute;
     width: 528px;
     height: 581px;
+    max-width: 95vh;
+    max-height: 95vh;
 
-    max-height: 95vh;
-    max-height: 95vh;
+    
 
     top: 50%;
     left: 50%;
 
     border-radius: 4px;
-    background-color: #fff;
+    background-color: var(--main-bg-color);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
     transform: translate(-50%, -50%) scale(1);
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: (0.4, 0, 0.2, 1);
 
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+    
 }
 
 .close-button {
@@ -530,8 +536,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 
 }
 
-.close-button:hover
-.close-button:focus {
+.close-button:hover {
     cursor: pointer;
     fill: var(--accent-color);
 }
